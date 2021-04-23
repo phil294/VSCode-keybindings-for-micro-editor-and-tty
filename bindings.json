@@ -73,6 +73,9 @@
 
 	// editor.action.deleteLines
 	"CtrlShift-k": "DeleteLine",
+	// Not documented in vscode but de facto keybinding shift+del (?)
+	// editor.action.clipboardCutAction
+	"ShiftDelete": "CutLine",
 	// deleteWordLeft
 	"CtrlBackspace": "DeleteWordLeft",
 	// deleteWordRight
