@@ -1,0 +1,83 @@
+{
+	/////// Basic navigation ///////
+	// These bindings are also present in all Windows Notepad-like textinputs, e.g. HTML textarea, often referred to as Common User Access (CUA)
+	
+	"CtrlUp": "ScrollUp",
+	"CtrlDown": "ScrollDown",
+	"CtrlLeft": "WordLeft",
+	"CtrlRight": "WordRight",
+	"CtrlShiftEnd": "SelectToEnd",
+	"CtrlShiftHome": "SelectToStart",
+	"CtrlShiftLeft": "SelectWordLeft",
+	"CtrlShiftRight": "SelectWordRight",
+	"ShiftPageDown": "SelectPageDown",
+	"ShiftPageUp": "SelectPageUp",
+	
+	/////// Visual Studio Code-specific keybindings ///////
+
+	// expandLineSelection
+	"Ctrl-l": "SelectLine",
+	
+	// editor.action.jumpToBracket
+	"CtrlShiftBackspace": "JumpToMatchingBrace",
+	
+	// editor.action.addSelectionToNextFindMatch
+	"Ctrl-d": "SpawnMultiCursor",
+	// cursorUndo
+	"Ctrl-u": "RemoveMultiCursor",
+	// editor.action.moveSelectionToNextFindMatch
+	"<Ctrl-k><Ctrl-d>": "SkipMultiCursor",
+	// cancelSelection
+	"ShiftEscape": "RemoveAllMultiCursors",
+	// editor.action.insertCursorBelow
+	"CtrlShiftDown": "SpawnMultiCursorDown",
+	// editor.action.insertCursorAgove
+	"CtrlShiftUp": "SpawnMultiCursorUp",
+	
+	// editor.action.nextMatchFindAction
+	"F3": "FindNext",
+	// editor.action.previousMatchFindAction
+	"ShiftF3": "FindPrevious",
+
+	// workbench.action.gotoLine
+	"Ctrl-g": "command-edit:goto ",
+
+	// Move autocompletion from tab to ctrl+space
+	"Tab": "IndentSelection|InsertTab",
+	"CtrlSpace": "Autocomplete",	
+
+	// Need init.lua for this action.
+	// editor.action.toggleWordWrap
+	"Alt-z": "lua:initlua.toggleSoftwrap",
+	
+	// The bindings from the next block are often overwritten by the terminal emulator itself.
+	// workbench.action.files.newUntitledFile
+	"Ctrl-n": "AddTab",
+	// workbench.action.nextEditor
+	"CtrlPageDown": "NextTab",
+	// workbench.action.previousEditor
+	"CtrlPageUp": "PreviousTab",
+	// workbench.action.closeWindow
+	"Ctrl-w": "Quit",
+	// workbench.action.quit
+	"Ctrl-q": "QuitAll",
+	// workbench.action.showCommands
+	"CtrlShiftP": "CommandMode",
+
+	// workbench.action.files.saveAs
+	"CtrlShift-s": "SaveAs",
+	
+	// Function comes from a (default enabled) plugin.
+	// editor.action.commentLine
+	"Ctrl-/": "lua:comment.comment",
+
+	// editor.action.deleteLines
+	"CtrlShift-k": "DeleteLine",
+	// deleteWordLeft
+	"CtrlBackspace": "DeleteWordLeft",
+	// deleteWordRight
+	"CtrlDelete": "DeleteWordRight",
+
+	// editor.action.copyLinesDownAction
+	"CtrlShiftAltDown": "DuplicateLine"
+}
