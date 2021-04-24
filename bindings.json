@@ -78,6 +78,7 @@
 	"ShiftDelete": "CutLine",
 	// deleteWordLeft
 	"CtrlBackspace": "DeleteWordLeft",
+	"OldBackspace": "DeleteWordLeft",
 	// deleteWordRight
 	"CtrlDelete": "DeleteWordRight",
 
