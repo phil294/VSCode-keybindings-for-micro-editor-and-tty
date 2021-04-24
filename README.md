@@ -2,7 +2,7 @@
 
 ## What
 
-Based on Windows/Linux shortcuts, e.g. <kbd>ctrl</kbd><kbd>left</kbd> for WordLeft and so on.
+Based on Windows/Linux shortcuts, e.g. <kbd>ctrl</kbd><kbd>left</kbd> for WordLeft and so on, also sometimes referred to as Common User Access (CUA)
 
 Sets all available micro keybindings to their vscode counterpart default shortcuts, if present.
 
