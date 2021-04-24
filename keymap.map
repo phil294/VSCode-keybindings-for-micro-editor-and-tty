@@ -1,0 +1,131 @@
+# ctrl left
+control keycode 105 = F200
+string F200 = "\033[1;5D"
+
+# ctrl right
+control keycode 106 = F201
+string F201 = "\033[1;5C"
+
+# shift left
+shift keycode 105 = F202
+string F202 = "\033[1;2D"
+
+# shift right
+shift keycode 106 = F203
+string F203 = "\033[1;2C"
+
+# ctrl shift left
+control shift keycode 105 = F204
+string F204 = "\033[1;6D"
+
+# ctrl shift right
+control shift keycode 106 = F205
+string F205 = "\033[1;6C"
+
+# ctrl up
+control keycode 103 = F206
+string F206 = "\033[1;5A"
+
+# ctrl down
+control keycode 108 = F207
+string F207 = "\033[1;5B"
+
+# shift up
+shift keycode 103 = F208
+string F208 = "\033[1;2A"
+
+# shift down
+shift keycode 108 = F209
+string F209 = "\033[1;2B"
+
+# ctrl shift up
+control shift keycode 103 = F210
+string F210 = "\033[1;6A"
+
+# ctrl shift down
+control shift keycode 108 = F211
+string F211 = "\033[1;6B"
+
+# shift pgup
+shift keycode 104 = F212
+string F212 = "\033[5;2~"
+
+# shift pgdown
+shift keycode 109 = F213
+string F213 = "\033[6;2~"
+
+# ctrl home
+control keycode 102 = F214
+string F214 = "\033[1;5H"
+
+# ctrl end
+control keycode 107 = F215
+string F215 = "\033[1;5F"
+
+# shift home
+shift keycode 102 = F216
+string F216 = "\033[1;2H"
+
+# shift end
+shift keycode 107 = F217
+string F217 = "\033[1;2F"
+
+# ctrl shift home
+control shift keycode 102 = F218
+string F218 = "\033[1;6H"
+
+# ctrl shift end
+control shift keycode 107 = F219
+string F219 = "\033[1;6F"
+
+# shift tab
+shift keycode 15 = F220
+string F220 = "\033[Z"
+
+# Alt+up/down
+alt keycode 103 = F224
+string F224 = "\033[1;3A"
+alt keycode 108 = F225
+string F225 = "\033[1;3B"
+
+# shift delete
+shift keycode 111 = F231
+string F231 = "\033[3;2~"
+
+# ctrl delete
+control keycode 111 = F233
+string F233 = "\033[3;5~"
+
+# ctrl shift k
+control shift keycode 37 = F232
+string F232 = "\033[107;6u"
+
+# ctrl bs
+control keycode 14 = Control_h
+
+# f3
+keycode 61 = F3
+
+# shift f3
+shift keycode 61 = F234
+string F234 = "\033[1;2R"
+
+# ctrl shift alt down
+shift control alt keycode 108 = F235
+string F235 = "\033[1;8B"
+
+# ctrl pagedown
+control keycode 109 = F236
+string F236 = "\033[6;5~"
+
+# ctrl pageup
+control keycode 104 = F237
+string F237 = "\033[5;5~"
+
+# ctrl shift p
+control shift keycode 25 = F238
+string F238 = "\033[112;6u"
+
+# ctrl shift s
+control shift keycode 31 = F239
+string F239 = "\033[115;6u"
