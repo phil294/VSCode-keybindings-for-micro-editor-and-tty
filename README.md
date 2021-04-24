@@ -26,16 +26,14 @@ If you want to use these shortcuts in Linux virtual console (typically tty1-6), 
 
 ## Problems
 
-<kbd>ctrl</kbd><kbd>shift</kbd><kbd>[letter]</kbd> keybindings probably won't work. [I don't know why.](https://unix.stackexchange.com/q/646443) Specifically, <kbd>ctrl</kbd><kbd>shift</kbd><kbd>s</kbd> (save as), <kbd>ctrl</kbd><kbd>shift</kbd><kbd>p</kbd> (enter command) and <kbd>ctrl</kbd><kbd>shift</kbd><kbd>k</kbd> (delete line). You may want to remap those yourself.
-
-These bindings are tailored to an English keyboard. Adjustments for other keyboard layouts should be minimal.
-
-Micro has a backup mechanic, but no session / restore functionality, it seems. For that, you will need a wrapper, for example tmux with [tmux-resurrect](https://github.com/tmux-plugins/tmux-resurrect).
+- <kbd>ctrl</kbd><kbd>shift</kbd><kbd>[letter]</kbd> keybindings probably won't work. [I don't know why.](https://unix.stackexchange.com/q/646443) Specifically, <kbd>ctrl</kbd><kbd>shift</kbd><kbd>s</kbd> (save as), <kbd>ctrl</kbd><kbd>shift</kbd><kbd>p</kbd> (enter command) and <kbd>ctrl</kbd><kbd>shift</kbd><kbd>k</kbd> (delete line). You may want to remap those yourself.
+- These bindings are tailored to an English keyboard. Adjustments for other keyboard layouts should be minimal.
+- Micro has a backup mechanic, but no session / restore functionality, it seems. For that, you will need a wrapper, for example tmux with [tmux-resurrect](https://github.com/tmux-plugins/tmux-resurrect).
 
 ## Omitted keybindings
 
 The following actions are not included in `bindings.json` because they either don't exist in vscode or have no default keybinding there. Some of these are useful though.
-- FindLiteral (<kbd>ctrl</kbd><kbd>f</kbd> is mapped to regex find)
+- FindLiteral (micro <kbd>ctrl</kbd><kbd>f</kbd> is mapped to regex find)
 - HalfPageUp
 - HalfPageDown
 - ParagraphPrevious
