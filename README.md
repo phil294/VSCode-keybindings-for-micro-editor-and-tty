@@ -16,6 +16,8 @@ Maybe consider this README as a basic guide to moving from VSCode to Linux Termi
 
 Put `bindings.json` into the config dir (see [micro keybindings docs](https://github.com/zyedidia/micro/blob/master/runtime/help/keybindings.md)). If you use the <kbd>alt</kbd><kbd>z</kbd> shortcut (toggle softwrap), you also need `init.lua` in this directory.
 
+These bindings are tailored to an English keyboard. Adjustments for other keyboard layouts should be minimal.
+
 ### TTY
 If you want to use these shortcuts in Linux virtual console (typically tty1-6), you also 
 - need `sudo loadkeys /path/to/keymap.map`, for example in your `.bashrc`. This is explained [here](https://github.com/zyedidia/micro/wiki/Linux-Console-Keybindings).
@@ -23,11 +25,8 @@ If you want to use these shortcuts in Linux virtual console (typically tty1-6), 
 - in case you didn't know, you can easily change tty [fonts](https://wiki.archlinux.org/index.php/Linux_console#Fonts) and [colors](http://archive.is/QSYHd) or change the terminal emulator, most commonly to
     - [KMSCON](https://wiki.archlinux.org/index.php/KMSCON) or
     - [fbterm](https://packages.debian.org/sid/utils/fbterm) (for Arch Linux, [this](https://github.com/glitsj16/fbterm-patched)+[this](https://gist.github.com/zellio/5809852) works well)
-
-## Problems
-
-- These bindings are tailored to an English keyboard. Adjustments for other keyboard layouts should be minimal.
-- Micro has a backup mechanic, but no session / restore functionality, it seems. For that, you will need a wrapper, for example tmux with [tmux-resurrect](https://github.com/tmux-plugins/tmux-resurrect).
+- micro has a backup mechanic, but no session / restore functionality, it seems. For that, you will need a wrapper, for example tmux with [tmux-resurrect](https://github.com/tmux-plugins/tmux-resurrect).
+- without X11, there is no system clipboard. You need to use micro's internal clipboard. This fails for copying accross multiple opened micro processes. As a workaround, you can set up a clipboard manager yourself: Copy the file `xclip` to `/some/path`, make it executable and inject this fake xclip into the PATH when running micro, for example with an alias in your bashrc: `alias micro='PATH=/some/path:"$PATH" \micro'`
 
 ## Omitted keybindings
 
