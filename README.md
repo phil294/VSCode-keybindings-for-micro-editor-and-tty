@@ -26,7 +26,6 @@ If you want to use these shortcuts in Linux virtual console (typically tty1-6), 
 
 ## Problems
 
-- <kbd>ctrl</kbd><kbd>shift</kbd><kbd>[letter]</kbd> keybindings probably won't work. [Probably a bug?](https://github.com/zyedidia/micro/issues/2087) Specifically, <kbd>ctrl</kbd><kbd>shift</kbd><kbd>s</kbd> (save as), <kbd>ctrl</kbd><kbd>shift</kbd><kbd>p</kbd> (enter command) and <kbd>ctrl</kbd><kbd>shift</kbd><kbd>k</kbd> (delete line). You may want to remap those yourself.
 - These bindings are tailored to an English keyboard. Adjustments for other keyboard layouts should be minimal.
 - Micro has a backup mechanic, but no session / restore functionality, it seems. For that, you will need a wrapper, for example tmux with [tmux-resurrect](https://github.com/tmux-plugins/tmux-resurrect).
 
