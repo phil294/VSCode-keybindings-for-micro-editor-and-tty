@@ -62,17 +62,20 @@
 	// workbench.action.quit
 	"Ctrl-q": "QuitAll",
 	// workbench.action.showCommands
-	"CtrlShiftP": "CommandMode",
+	// "CtrlShiftP"
+	"\u001b[112;6u": "CommandMode",
 
 	// workbench.action.files.saveAs
-	"CtrlShift-s": "SaveAs",
+	// "CtrlShift-s"
+	"\u001b[115;6u": "SaveAs",
 	
 	// Function comes from a (default enabled) plugin.
 	// editor.action.commentLine
 	"Ctrl-/": "lua:comment.comment",
 
 	// editor.action.deleteLines
-	"CtrlShift-k": "DeleteLine",
+	// "CtrlShift-k"
+	"\u001b[107;6u": "DeleteLine",
 	// Not documented in vscode but de facto keybinding shift+del (?)
 	// editor.action.clipboardCutAction
 	"ShiftDelete": "CutLine",
